@@ -1,0 +1,946 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald';
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/*************************/
+/*******Header************/
+
+header {
+  padding: 20px 2% 35px 2%;
+  height: 130px;
+}
+
+header nav.desktop {
+  float: right;
+  position: relative;
+  top: 20px;
+}
+
+header div.logo {
+  float: left;
+}
+
+header nav.desktop ul {
+  list-style-type: none;
+}
+
+header nav.desktop ul li {
+  float: left;
+  font-size: 23px;
+  padding: 0 40px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+header nav.desktop ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav.mobile {
+  display: none;
+  float: right;
+  width: 32px;
+  height: 32px;
+  background-size: 100% 100%;
+  background-image: url('../img/icon_menu.png');
+  margin-top: 40px;
+}
+
+nav.mobile ul {
+  cursor: pointer;
+  display: none;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 92px;
+  z-index: 999;
+  background-color: white;
+  border-bottom: 4px solid #eb202d;
+}
+
+nav.mobile li {
+  font-size: 23px;
+  padding: 20px 0;
+  font-style: italic;
+}
+
+nav.mobile li a {
+  color: black;
+  text-decoration: none;
+}
+/*************************/
+/*******Banner************/
+
+section.banner {
+  overflow: hidden;
+  width: 100%;
+  height: 650px;
+  background: black;
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+
+.text-banner {
+  padding: 100px;
+  margin-top: 30px;
+}
+
+.text-banner-single {
+  margin-top: 20px;
+  width: 314px;
+  height: 50px;
+  background-image: url('../img/box-text.png');
+  background-size: 100% 100%;
+  font-size: 23px;
+  color: white;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.text-banner .text-banner-single:nth-of-type(2) {
+  width: 200px;
+  position: relative;
+  left: -10px;
+  height: 50px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3) {
+  width: 170px;
+  height: 50px;
+  position: relative;
+  left: -20px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4) {
+  width: 320px;
+  height: 50px;
+  background-image: url('../img/box-white-text.png');
+  color: black;
+  position: relative;
+  left: -30px;
+  font-size: 21px;
+}
+
+/************************************/
+/*******Veículos-destaque************/
+
+section.veiculos-destaque {
+  padding: 90px 2%;
+}
+
+.line-titulo h2 {
+  text-align: center;
+  font-size: 27px;
+  font-style: italic;
+  text-transform: uppercase;
+  position: relative;
+  background: white;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.vitrine-destaque {
+  float: left;
+  width: 33.3%;
+}
+
+.vitrine-destaque h2 {
+  padding-left: 8px;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.vitrine-destaque p {
+  padding-left: 8px;
+  color: #353535;
+  font-size: 15px;
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.btn1 {
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  background-color: #eb202d;
+  text-decoration: none;
+  border-bottom: 5px solid #b21e1e;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  width: 150px;
+}
+.vitrine-destaque a {
+  margin-left: 8px;
+  margin-top: 16px;
+}
+
+.vitrine-destaque .carro-img1 {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 8px solid white;
+  background-image: url('../img/0bc41997bdfd595a92d0b7b3a298b048.jpg');
+}
+
+.vitrine-destaque .carro-img2 {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 8px solid white;
+  background-image: url('../img/50e59a52f8ce7d03964664d37669264c--chevrolet-muscle-cars.jpg');
+}
+
+.vitrine-destaque .carro-img3 {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 8px solid white;
+  background-image: url('../img/e1bf398fcdcf12e6e1161c5d4f265db4.jpg');
+}
+
+.vitrine-destaque .carro-img4 {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 8px solid white;
+  background-image: url('../img/f1d8824f15aa4596bbf38650a8643d1f--muscle-cars-hot-rods.jpg');
+}
+
+.vitrine-destaque .carro-img5 {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 8px solid white;
+  background-image: url('../img/47c0f6ed4a7179745292cd25fd025b5e.jpg');
+}
+
+.vitrine-destaque .carro-img6 {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 8px solid white;
+  background-image: url('../img/6443517ec97700f490acf98f9d355044.jpg');
+}
+
+.line-titulo {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ln1 {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  top: 20px;
+}
+
+section.veiculos-destaque .container {
+  max-width: 1000px;
+  padding: 40px 0;
+  text-align: left;
+}
+
+/***************************/
+/*******Servicos************/
+.servicos-descricao {
+  display: flex;
+}
+
+.half1 {
+  width: 50%;
+  text-align: right;
+  padding: 90px 0;
+  background-color: #242424;
+  color: white;
+}
+
+.half1-wraper {
+  padding-right: 100px;
+  text-align: left;
+  display: inline-block;
+}
+
+.half1-wraper h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.half1-wraper ul {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.half1-wraper li {
+  margin-left: 15px;
+}
+.half1-wraper a {
+  margin-top: 20px;
+  margin-left: 40px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.half2 {
+  width: 50%;
+  padding: 90px 100px;
+  background-color: #eb202d;
+  color: white;
+}
+
+.half2 h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.half2 .depoimento-single {
+  margin-top: 19px;
+}
+
+.half2 .depoimento-single p {
+  font-size: 22px;
+}
+
+.navigation {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.arrows {
+  float: left;
+}
+
+.navigation img {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.nome-depoimento {
+  float: right;
+  color: #252525;
+  font-size: 23px;
+}
+
+/***************************/
+/*******Contato************/
+
+section.contato {
+  padding: 80px 2% 0 2%;
+}
+
+section.contato form {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+section.contato .input-wraper {
+  float: left;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.input-wraper input[type='text'],
+.input-wraper input[type='email'],
+.input-wraper input[type='tel'] {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  line-height: 70px;
+  padding-left: 15px;
+  outline: none;
+  font-size: 16px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+section.contato textarea {
+  width: 100%;
+  height: 120px;
+  padding: 8px;
+  resize: none;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+section.contato form .input-wraper:nth-of-type(5) {
+  text-align: center;
+}
+
+section.contato input[type='submit'] {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/***************************/
+/*******Footer************/
+
+footer {
+  margin-top: 20px;
+  padding: 40px 2%;
+  background: #252525;
+}
+
+footer nav {
+  float: left;
+  color: white;
+}
+
+footer nav ul {
+  list-style-type: none;
+}
+
+footer nav ul li {
+  float: left;
+  padding: 40px 35px;
+  font-size: 19px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+footer nav ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer p {
+  float: right;
+  color: white;
+  font-size: 19px;
+  font-style: italic;
+  padding: 40px 2%;
+}
+
+/************************************************************/
+/****************************Venda***************************/
+section.venda {
+  min-height: 90%;
+  padding: 90px 0;
+}
+
+.sidebar {
+  float: left;
+  width: 30%;
+}
+
+.search1 {
+  width: 90%;
+  display: inline-block;
+}
+
+.search1 h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: normal;
+}
+
+.search1 .barra-preco {
+  width: 100%;
+  height: 20px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  position: relative;
+  background: white;
+}
+
+.barra-preco-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(200, 200, 200)
+  );
+}
+
+.pointer-barra {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(180, 180, 180)
+  );
+  border: 1px solid #777;
+  position: absolute;
+  top: -3px;
+  cursor: pointer;
+  left: calc(30% - 13px);
+}
+.content-venda {
+  margin-top: 40px;
+}
+
+.valor-pesquisa {
+  margin-top: 8px;
+}
+
+.valor-pesquisa {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.valor-pesquisa p:nth-of-type(1) {
+  float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2) {
+  float: right;
+}
+
+.search2 {
+  margin-top: 40px;
+}
+
+.search2 h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: normal;
+}
+
+.form-venda-wraper {
+  margin-top: 10px;
+}
+
+.form-venda-wraper input[type='checkbox'] {
+  display: none;
+}
+
+.form-venda-wraper label {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: top;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-venda-wraper input[type='checkbox']:checked + label .circle {
+  display: block;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: black;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  display: none;
+}
+
+.form-venda-wraper span {
+  padding: 0 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/************************************************************/
+/**********************Vitrine-Venda*************************/
+
+.vitrine-venda {
+  float: left;
+  width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque {
+  margin-top: 20px;
+}
+
+section.venda-single .container {
+  padding: 40px 0 0 0;
+  max-width: 1280px;
+  text-align: center;
+}
+
+section.venda-single {
+  padding: 80px 2% 0 2%;
+}
+
+.info-veiculo {
+  display: inline-block;
+  width: 60%;
+}
+
+.foto-destaque {
+  width: 100%;
+  padding-top: 70%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.descricao-veiculo {
+  display: inline-block;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.descricao-veiculo h2 {
+  text-align: left;
+}
+
+.descricao-veiculo p {
+  font-size: 17px;
+  max-width: 360px;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.descricao-veiculo a {
+  margin-top: 25px;
+}
+
+.nav-galeria {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.nav-galeria-parent {
+  width: 100%;
+  position: relative;
+}
+
+.nav-galeria-wraper {
+  width: 200%;
+  margin-left: -20px;
+}
+
+.mini-img-wraper {
+  width: calc(33.3% * (100 / 200));
+  float: left;
+  padding: 9px;
+}
+
+.mini-img {
+  width: 100%;
+  height: 100%;
+  padding-top: 70%;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.info-bread {
+  text-align: left;
+}
+
+.info-bread a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  margin: 10px 10px 10px 0px;
+}
+
+.info-bread span {
+  padding: 0 30px;
+}
+.info-bread a:last-child {
+  color: red;
+}
+
+/***********************************/
+/**********Sobre*******************/
+
+section.sobre {
+  min-height: 90%;
+  padding: 60px 2% 20px 2%;
+}
+
+section.sobre .container {
+  margin-top: 30px;
+  max-width: 840px;
+}
+
+section.sobre .img-destaque-sobre {
+  width: 100%;
+  padding-top: 60%;
+  background-image: url('../img/Opalas-ss.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.sobre .descricao-autor {
+  margin-top: 20px;
+}
+
+.descricao-autor h2 {
+  font-size: 24px;
+}
+
+.descricao-autor p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.descricao-autor2 {
+  margin-top: 40px;
+}
+.descricao-autor2 .img-small {
+  float: left;
+  background-image: url('../img/Opala-menta\ 8.png');
+  background-size: 100% 100%;
+  width: 30%;
+  padding-top: 30%;
+}
+
+.descricao-autor2 p {
+  float: left;
+  width: 70%;
+  padding: 15px;
+  line-height: 28px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/***********************************/
+/**********Media Queries************/
+
+@media screen and (max-width: 1400px) {
+  section.banner {
+    background-size: 90% auto;
+    background-position: 200% 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section.banner {
+    background-size: cover;
+    background-position: center;
+    height: 70vw;
+    min-height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.banner {
+    background-size: cover;
+    background-position: 100px center;
+    height: 80vh;
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: block;
+    text-align: center;
+  }
+
+  nav.mobile ul {
+    list-style-type: none;
+  }
+
+  section.servicos-descricao {
+    flex-direction: column;
+  }
+
+  .half1 {
+    text-align: center;
+  }
+
+  .half1-wraper {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .half1,
+  .half2 {
+    width: 100%;
+    padding: 80px 4%;
+  }
+
+  .w50 {
+    width: 100%;
+  }
+
+  footer nav {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer p {
+    float: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .search1 {
+    display: inline-block;
+  }
+
+  .search2 {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .vitrine-venda {
+    text-align: center;
+    width: 100%;
+  }
+
+  .info-veiculo {
+    width: 100%;
+  }
+
+  .descricao-veiculo {
+    text-align: center;
+  }
+
+  .descricao-veiculo p {
+    max-width: none;
+    padding: 20px 0;
+  }
+  .descricao-veiculo a {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .text-banner {
+    padding: 30px;
+    margin-left: 20px;
+  }
+
+  .text-banner-single {
+    font-size: 18px;
+  }
+
+  .vitrine-destaque {
+    display: inline-block;
+    float: none;
+    width: 80%;
+  }
+
+  .vitrine-destaque a {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  section.veiculos-destaque .line-titulo {
+    font-size: 23px;
+  }
+
+  section.veiculos-destaque .container {
+    text-align: center;
+  }
+
+  .descricao-autor2 .img-small {
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .descricao-autor2 p {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vitrine-destaque {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  nav.desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .half1-wraper a {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .half1 {
+    text-align: center;
+  }
+
+  .half1-wraper {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .half1-wraper a {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 990px), (max-width: 1024px) {
+  .info-bread {
+    text-align: center;
+  }
+}
